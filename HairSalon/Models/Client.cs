@@ -1,21 +1,10 @@
- namespace HairSalon.Models
+namespace HairSalon.Models
 {
     public class Client
     {
-        // public bool IsLeapYear(int year)
-        // {
-        //     if (year % 400 == 0)
-        //     {
-        //         return true;
-        //     }
-        //     else if (year % 100 == 0)
-        //     {
-        //         return false;
-        //     }
-        //     else
-        //     {
-        //         return year % 4 == 0;
-        //     }
-        // }
+        public int ClientId { get; }
+        public string Description { get; set; }
+        public int StylistId { get; set; }  //foreign key (primary key in Stylist.cs)
+        public virtual Stylist Stylist { get; set; }
     }
 }
