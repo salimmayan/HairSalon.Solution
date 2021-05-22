@@ -29,7 +29,7 @@
 -   Under  _Default Schema to be Imported To_, select the  _New_  button.
     
     -   Enter a name for your database (**Note:** File `HairSalon.Solution\HairSalon\appsettings.json` should be updated to reflect the new Database name (in below image of `appsettings.json`, update Database name and Password) )
-    ![Image of Console when order is placed](./wwwroot/img/appsettings_json_image.png)
+    ![Image of Console when order is placed](./HairSalon/wwwroot/img/appsettings_json_image.png)
     - Click  _Ok_.
     - Click  _Start Import_.
     - Reopen the  _Navigator_  >  _Schemas_  tab. Right click and select  _Refresh All_ (new database will appear with the name you.
