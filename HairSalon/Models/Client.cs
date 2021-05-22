@@ -1,6 +1,6 @@
-namespace Calendar
+ namespace HairSalon.Models
 {
-    public class LeapYear
+    public class Client
     {
         public bool IsLeapYear(int year)
         {
