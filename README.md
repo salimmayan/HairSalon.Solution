@@ -24,7 +24,7 @@
     
 -   In  _Import Options_  select  _Import from Self-Contained File_.
     
--   Navigate to the file at `HairSalon\salim_mayan.sql`
+-   Navigate to the file at `salim_mayan.sql`
     
 -   Under  _Default Schema to be Imported To_, select the  _New_  button.
     
