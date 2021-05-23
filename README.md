@@ -15,11 +15,11 @@
 
 2. Open directory `HairSalon.Solution` in VS Code
 
-3. To install packages listed in `.csproj` file, from command line navigate to `HairSalon`  directory and then run  `dotnet restore` (**'obj'** directory would get created in both `HairSalon`  and  `HairSalon.Tests`  directories)
+3. To install packages listed in `.csproj` file, from command line navigate to `HairSalon`  directory and then run  `dotnet restore` (**'obj'** directory would get created in `HairSalon` directory)
 
-4. To create internal content for build, from command line navigate to `HairSalon`  directory and then run  `dotnet build` (**'bin'** directory would get created in both `HairSalon`  and  `HairSalon.Tests`  directories)
+4. To create internal content for build, from command line navigate to `HairSalon`  directory and then run  `dotnet build` (**'bin'** directory would get created in `HairSalon`  directory)
 
-5. **Re-create Database with MySQL Workbench Import Functionality**: Use file`HairSalon\salim_mayan.sql` to recreate Database with required tables. From _MySQL Workbench_ inititate the following steps ...
+5. **Re-create Database with MySQL Workbench Import Functionality**: Use file`salim_mayan.sql` to recreate Database with required tables. From _MySQL Workbench_ inititate the following steps ...
 -   In the  _Navigator_  >  _Administration_  window, select  _Data Import/Restore_.
     
 -   In  _Import Options_  select  _Import from Self-Contained File_.
