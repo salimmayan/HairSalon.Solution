@@ -4,19 +4,27 @@
 
 @using HairSalon.Models;
 
-<h1>Stylists</h1>
+<h2>Stylists</h2>
 
 @if (@Model.Count == 0)
 {
-  <h3>No stylists have been added yet!</h3>
+  <h4>No stylists have been added yet!</h4>
 } 
 
-<ul>
-  @foreach(Stylist stylist in Model)
-  {
-    <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
-  }
-</ul>
+
+@if (@Model.Count != 0)
+{
+  <div class="divClass">
+    <p><span class="left olive2">Stylist Name</span> <span class="right olive2">Stylist ID</span></p>
+     <br>
+    @foreach(Stylist stylist in Model)
+    {
+      <span class="left">@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</span> <span class="right">@stylist.StylistId </span>
+      <br>
+    }
+  </div>
+}
+<br> <br> <br>
 
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>

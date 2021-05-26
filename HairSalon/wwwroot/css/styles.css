@@ -1,5 +1,5 @@
 body {
-	background: orange !important;
+	background: lightpink !important;
 	color: white;
 	text-align: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,6 +10,13 @@ body {
 	width: 75%;
   }
   
+  ul.no-bullets {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+
   .containerExtra {
 	background-color: #f88778;
 	padding: 2px 10px 5px 10px;
@@ -25,9 +32,10 @@ body {
 	color: #f52409;
   }
   
-  h3 {
-	padding-left: 10px;
-	text-align: left;
+  h2 {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
 	color: olive;
   }
   
@@ -65,9 +73,26 @@ body {
   .olive {
 	color: olive;
   }
+
+  .olive2 {
+	color: olive !important;
+	font-weight: bolder !important;;
+  }
+
   .btnColor {
 	color: white;
-	background-color:#f52409;
+	background-color:olive;
+  }
+
+  .btnDanger {
+	color: white;
+	background-color:red;
+	border-color: red;
+  }
+
+  .btn {
+	color: white;
+	background-color:olive;
   }
   
   .block {
@@ -85,6 +110,13 @@ body {
 	margin:auto;
   }
   
+  .divClass {
+	text-transform: uppercase;
+	width:50%;
+	/* width: 100px; */
+	margin:auto;
+  }
+
   #story {
 	display: none;
 	background-color: #eb604e;
@@ -117,7 +149,29 @@ body {
 	color:white;
 	list-style-type: none;  
   }
+
+  .heavy {
+	font-weight: 4500; 
+	color:olive; 
+  }
+
+  .heavy2 {
+	font-weight: 4500; 
+	color:red; 
+  }
+
+  .left {
+	font-weight: 1200;
+	color:white;
+	float: left !important;
+  }
   
+  .right {
+	font-weight: 1200;
+	color:white;
+	float: right !important;
+  }
+
   .color {
 	font-weight: 700;
 	color:white;
@@ -132,12 +186,12 @@ body {
 
   div#footer {
 	position:fixed;
-	/* text-align: center; */
+	text-align: center !important;
 	bottom:0px;
 	left:0px;
 	width:100%;
 	color:#CCC;
 	background:#333;
 	padding: 8px; 
-	padding-left: 50%;
+	padding-left: 0%;
 }

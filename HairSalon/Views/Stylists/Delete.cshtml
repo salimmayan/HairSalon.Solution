@@ -6,9 +6,16 @@
 
 <h2>Are you sure you want to delete Stylist?</h2>
 
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+<h4><span class="heavy2">@Html.DisplayNameFor(model => model.Name):</span> @Html.DisplayFor(model => model.Name)</h4>
+<br><br>
+
 @using (Html.BeginForm())
 {
-  <input type="submit" value="Delete" />
+  <div class="divClass">
+    <input type="submit" value="Delete" class="btnDanger" />
+  </div>
 }
+
+<br><br><br>
+
 @Html.ActionLink("Back to List", "Index")

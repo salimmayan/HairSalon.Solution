@@ -6,15 +6,24 @@
 
 <h2>Edit</h2>
 
-<h4>Edit this Stylist: @Html.DisplayFor(model => model.Name)</h4>
+<h4><span class="heavy2">Edit this Stylist:</span> @Html.DisplayFor(model => model.Name)</h4>
+
+<br><br>
+
+
 
 @using (Html.BeginForm())
 {
-  @Html.HiddenFor(model => model.StylistId)
-
-  @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
-
-  <input type="submit" value="Save" />
+  <div class="divClass">
+    @Html.HiddenFor(model => model.StylistId)
+    <span class="left">@Html.LabelFor(model => model.Name)</span>
+    <span class="right">@Html.EditorFor(model => model.Name)</span>
+    <br>
+    <br>
+    <input type="submit" value="Save" class="btnDanger" />
+  </div>
 }
+
+<br><br><br>
+
 <p>@Html.ActionLink("Back to list", "Index")</p>

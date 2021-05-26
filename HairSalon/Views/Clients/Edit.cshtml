@@ -6,19 +6,23 @@
 
 <h2>Edit</h2>
 
-<h4>Edit this Client: @Html.DisplayFor(model => model.Description)</h4>
-
+<h4><span class="heavy2">Edit this Client:</span> @Html.DisplayFor(model => model.Description)</h4>
+<br><br>
 @using (Html.BeginForm())
 {
+  <div class="divClass">
     @Html.HiddenFor(model => model.ClientId)
-
-    @Html.LabelFor(model => model.Description)
-    @Html.EditorFor(model => model.Description)
-
-    @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistId")
-
-    <input type="submit" value="Save" />
+    <span class="left">@Html.LabelFor(model => model.Description)</span>
+    <span class="right">@Html.EditorFor(model => model.Description)</span>
+    <br>
+    <br>
+    <span class="left">@Html.LabelFor(model => model.Stylist)</span>
+    <span class="right">@Html.DropDownList("StylistId")</span>
+    <br>
+    <br>
+    <input type="submit" value="Save" class="btnDanger"/>
+  </div>
 }
 
+<br><br><br>
 <p>@Html.ActionLink("Back to list", "Index")</p>
